@@ -1,0 +1,11 @@
+module(
+    name = "elodie_haskell_test_utils",
+    version = "1.0.0",
+)
+
+bazel_dep(name = "elodie_bazel_rules", version = "0.1.0")
+git_override(
+    module_name = "elodie_bazel_rules",
+    remote = "https://github.com/nlander/elodie_bazel_rules.git",
+    commit = "89f125015f10ffc1c93d13fa748d431e8f19c8a0",
+)
