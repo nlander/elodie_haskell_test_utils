@@ -21,20 +21,6 @@
           '';
         };
         packages = {
-          default = pkgs.stdenv.mkDerivation {
-            pname = "elodie-haskell-test-utils";
-            version = "0.1.0";
-            src = ./.;
-            buildInputs = [ haskellEnv ];
-            buildPhase = ''
-              mkdir elodie_haskell_test_utils
-              ghc -c -O2 -odir elodie_haskell_test_utils -hidir elodie_haskell_test_utils Elodie/Test/Utils.hs
-            '';
-            installPhase = ''
-              mkdir -p $out/bin
-              cp -a elodie_haskell_test_utils $out/lib/
-            '';
-          };
           ghc-env = haskellEnv;
         };
       }
