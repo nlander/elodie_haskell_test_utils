@@ -3,5 +3,7 @@ load("@elodie_bazel_rules//haskell:definitions.bzl", "haskell_library")
 haskell_library(
     name = "elodie_haskell_test_utils_library",
     srcs = ["Elodie/Test/Utils.hs"],
+    modules = ["Elodie.Test.Utils"],
+    deps_external = ["tasty"],
     visibility = ["//visibility:public"],
 )
