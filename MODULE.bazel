@@ -7,5 +7,5 @@ bazel_dep(name = "elodie_bazel_rules", version = "0.1.0")
 git_override(
     module_name = "elodie_bazel_rules",
     remote = "https://github.com/nlander/elodie_bazel_rules.git",
-    commit = "c14d8e41c61416df7de34aafc49af6646f20e2db",
+    commit = "a82e3390b86636a63434e8cfb660455ad7729150",
 )
