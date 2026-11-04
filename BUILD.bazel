@@ -4,6 +4,6 @@ haskell_library(
     name = "elodie_haskell_test_utils_library",
     srcs = ["Elodie/Test/Utils.hs"],
     modules = ["Elodie.Test.Utils"],
-    deps_external = ["tasty"],
+    deps_external = ["tasty-1.5.4"],
     visibility = ["//visibility:public"],
 )
